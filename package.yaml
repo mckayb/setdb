@@ -1,0 +1,29 @@
+name: setdb
+version: '0.1.0.0'
+category: Web
+author: McKay Broderick 
+maintainer: mckay.db@gmail.com
+copyright: McKay Broderick
+license: BSD3
+homepage: https://github.com/mckayb/setdb#readme
+extra-source-files:
+- README.md
+
+ghc-options: -Wall
+
+dependencies:
+  - base >=4.7 && <5
+
+executables:
+  setdb:
+    main: Main.hs
+    source-dirs: src
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - src
+      - test
+    dependencies:
+      - hspec
